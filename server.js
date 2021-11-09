@@ -51,7 +51,7 @@ app.use('/resources/upload/img', express.static( __basedir + "/resources/upload/
 // app.use('show/image', express.static("../resources/upload/img" ));
 const port = process.env.PORT || 3001;
 
-db.sequelize.sync();
+// db.sequelize.sync();
 
 app.listen(port, () => {
     console.log("Express server listening on port %d in %s mode", port, app.settings.env);
